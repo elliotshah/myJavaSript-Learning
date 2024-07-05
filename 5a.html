@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Variable Exercise</title>
+</head>
+<body>
+  
+  <p>Cart Quantity</p>
+  
+
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">
+    Show Quantity
+  </button>
+  <button onclick="cartQuantity++;
+  console.log(`Cart Quantity: ${cartQuantity}`)">
+    Add to Cart
+  </button>
+  <button onclick="cartQuantity+=2;
+  console.log(`Cart Quantity: ${cartQuantity}`)">
+    +2
+  </button>
+  <button onclick="cartQuantity+=3;
+  console.log(`Cart Quantity: ${cartQuantity}`)">
+    +3
+  </button>
+  <button onclick="cartQuantity=0;
+  console.log('Cart was reset');
+  console.log(`Cart Quantity: ${cartQuantity}`);">
+    Reset Cart
+  </button>
+  
+  
+  
+  
+  <script>
+    let cartQuantity=0;
+
+    // let name ="Elliot";
+    // console.log(name);
+    // console.log("My name is:$ "+name);
+
+    // let coffee=5;
+    // let bagel=3;
+    // let soup=9;
+
+    // let cost= coffee+2*bagel+soup;
+    // console.log(`cost of the food:$ ${cost}`);
+    // let tax=cost*0.1;
+    // console.log(`Tax(10%): $${tax}`);
+
+  </script>
+  
+</body>
+</html>
