@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <p>Rock Paper Scissors</p>
+
+  <button onclick="
+      computermovefn();
+      if(computerMove==='rock'){
+        alert('you got draw');
+      }
+      else if(computerMove==='paper'){
+        alert('you loose ha ha ha');
+      }
+      else{
+        alert('you won');
+      }
+
+
+
+  ">Rock</button>
+  <button onclick="
+      computermovefn();
+      if(computerMove==='paper'){
+        alert('you got draw');
+      }
+      else if(computerMove==='scissors'){
+        alert('you loose ha ha ha');
+      }
+      else{
+        alert('you won');
+      }
+  ">Paper</button>
+  <button onclick="
+     computermovefn();
+      if(computerMove==='scissors'){
+        alert('you got draw');
+      }
+      else if(computerMove==='rock'){
+        alert('you loose ha ha ha');
+      }
+      else{
+        alert('you won');
+      }
+  ">Scissors</button>
+
+      <script>
+        const score ={
+          wins:0,
+          lose:0,
+          Tie:0
+
+        };
+
+        let computerMove='';
+        function computermovefn(){
+          const randomNumber = Math.random();
+          if(randomNumber>=0 && randomNumber<1/3){
+            computerMove='rock'
+          }
+          else if(randomNumber>=1/3 && randomNumber<2/3){
+            computerMove='paper'
+          }
+          else if(randomNumber>=2/3 && randomNumber<1){
+            computerMove='scissors'
+          }
+        }
+      </script>
+  
+</body>
+</html>
